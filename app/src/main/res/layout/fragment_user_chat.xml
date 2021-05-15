@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.UserChatFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/const_userchat_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="12dp"
+        android:background="@drawable/gradientcolor"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chatop_userpic"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/chatop_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/chatop_userpic"
+            android:text="xxxxxxxx xxxxxxx"
+            android:layout_marginHorizontal="24dp"
+            android:textColor="#FFFFFF"
+            />
+
+        <TextView
+            android:id="@+id/chatop_userstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/chatop_username"
+            app:layout_constraintStart_toEndOf="@id/chatop_userpic"
+            android:text="xxxxxxxx xxxxxxx"
+            android:layout_marginHorizontal="24dp"
+            android:paddingTop="8dp"
+            android:textColor="#FFFFFF"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recy_userchat_mess"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/const_userchat_send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/const_userchat_toolbar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:elevation="12dp"
+        android:paddingHorizontal="8dp"
+        android:id="@+id/const_userchat_send"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/chatsend_sendmsg"
+        android:background="@drawable/roundshape"
+        android:layout_marginBottom="8dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chatsend_emoji"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/ic_insert_emoticon_black_24dp"
+            android:background="@drawable/backgroundgradient"
+            />
+
+
+
+        <EditText
+            android:id="@+id/chatsend_textmsg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            app:layout_constraintTop_toTopOf="parent"
+            android:paddingHorizontal="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@id/chatsend_emoji"
+            app:layout_constraintEnd_toStartOf="@id/chatsend_sendattach"
+            android:minLines="1"
+            android:hint="Type a message"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chatsend_sendattach"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/chatsend_sendcamera"
+            android:layout_marginHorizontal="8dp"
+            android:src="@drawable/ic_attach_file_black_24dp"
+            android:background="@drawable/backgroundgradient"
+            android:padding="4dp"
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/chatsend_sendcamera"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginHorizontal="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:src="@drawable/ic_camera_alt_black_24dp"
+            android:background="@drawable/backgroundgradient"
+            android:padding="4dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/chatsend_sendmsg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"
+        android:src="@drawable/ic_send_black_24dp"
+        android:background="@drawable/backgroundgradient"
+        android:layout_margin="8dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

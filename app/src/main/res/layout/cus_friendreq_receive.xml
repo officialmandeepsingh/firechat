@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_freq_r_img"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/txt_freq_r_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="24dp"
+        android:text="xxxxxx xxxxxxx"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/img_freq_r_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btn_freq_r_acpt"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text=" Accept "
+        app:layout_constraintTop_toBottomOf="@id/txt_freq_r_name"
+        app:layout_constraintStart_toEndOf="@id/img_freq_r_img"
+        app:layout_constraintEnd_toStartOf="@id/btn_freq_r_decline"
+        android:layout_marginHorizontal="24dp"
+        android:paddingHorizontal="18dp"
+        android:background="@drawable/backgroundgradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btn_freq_r_decline"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text=" Decline "
+        app:layout_constraintTop_toBottomOf="@id/txt_freq_r_name"
+        app:layout_constraintStart_toEndOf="@id/btn_freq_r_acpt"
+        android:layout_marginHorizontal="24dp"
+        android:paddingHorizontal="18dp"
+        android:background="@drawable/backgroundgradient"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "814236176927",
+    "firebase_url": "https://firechat-b6830.firebaseio.com",
+    "project_id": "firechat-b6830",
+    "storage_bucket": "firechat-b6830.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814236176927:android:698feeb4fd7e3bb2917b2a",
+        "android_client_info": {
+          "package_name": "com.mandeep.firechat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814236176927-73j8m0se6bt9fmc8mn5ahkl500q6ha7k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGUoY0IRCU4MOalJQXw10xk1alhB9zkcc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "814236176927-73j8m0se6bt9fmc8mn5ahkl500q6ha7k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
